@@ -69,7 +69,7 @@ class StockConsumer(AsyncWebsocketConsumer):
             if i.user.count() == 0:
                 args.remove(i.stock)
                 i.delete()
-        if args == None:
+        if args is None:
             args = []
 
         if len(args) == 0:
