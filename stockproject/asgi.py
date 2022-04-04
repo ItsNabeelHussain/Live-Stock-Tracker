@@ -14,7 +14,6 @@ from django.core.asgi import get_asgi_application
 
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'stockproject.settings')
 
-# Needed if starting server using daphne or uvicorn command
 import django
 django.setup()
 
